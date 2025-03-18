@@ -31,14 +31,28 @@
 #     print(i)
 #     i+=1
     
-# for i in range(1,11):
-#    print("i")
+# /
 
 
-print([i for i in range (1,11)])
+# # print([i for i in range (1,11)])
 
 
+# reverse print 
 
 
+# i=10
+# while i>=1:
+#     print(i)
+#     i-=1
+  
+
+# WRITE A PYTHON SCRIPT TO  REVERSE A TUPLE
+
+t=eval(input("enter the tipple value"))
+print("original tuple",t)
+l=list(t)
+l.reverse()
+t=tuple(l)
+print("reversed tuple is",t)
 
     
