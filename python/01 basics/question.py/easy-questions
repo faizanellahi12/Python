@@ -62,24 +62,11 @@
 #   while True:
 #     n+=1
 #     for i in range(2,n):
-#       if n%i==0:
+#        if n%i==0:
 #         break
 #       else:
 #         return n
 
 
-# import math
-
-# # print(math.pi)
-# username="noonchza";
-# print(len(username));
-# # print("username")
-# #  print("username[1]")
-
-
-# mylist=[123,"chaii",3.12,123]
-
-# print(len(mylist))
- 
-mytup=(1,2,3,3,4)
-print(len(mytup))
+# single line function to calculate factorial of number in ppython
+f=lambda n: n*f(n-1)if n>0 else 1
