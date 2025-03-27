@@ -69,4 +69,24 @@
 
 
 # single line function to calculate factorial of number in ppython
-f=lambda n: n*f(n-1)if n>0 else 1
+
+
+f=lambda n: n*f (n-1) if n>0 else 1
+
+
+# Function to add two numbers in centimeters
+def add_centimeters(cm1, cm2):
+    return cm1 + cm2
+
+# Input: Get two numbers from the user
+try:
+    num1 = float(input("Enter the first number in centimeters: "))
+    num2 = float(input("Enter the second number in centimeters: "))
+
+    # Calculate the sum
+    result = add_centimeters(num1, num2)
+
+    # Output: Display the result
+    print(f"The sum of {num1} cm and {num2} cm is {result} cm.")
+except ValueError:
+    print("Please enter valid numbers.")
