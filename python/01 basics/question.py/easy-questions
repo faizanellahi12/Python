@@ -71,22 +71,29 @@
 # single line function to calculate factorial of number in ppython
 
 
-f=lambda n: n*f (n-1) if n>0 else 1
+# 
 
 
-# Function to add two numbers in centimeters
-def add_centimeters(cm1, cm2):
-    return cm1 + cm2
 
-# Input: Get two numbers from the user
-try:
-    num1 = float(input("Enter the first number in centimeters: "))
-    num2 = float(input("Enter the second number in centimeters: "))
 
-    # Calculate the sum
-    result = add_centimeters(num1, num2)
 
-    # Output: Display the result
-    print(f"The sum of {num1} cm and {num2} cm is {result} cm.")
-except ValueError:
-    print("Please enter valid numbers.")
+def sum_of_numbers(numbers):
+    """
+    This function takes a list of numbers and returns their sum.
+
+    :param numbers: List of numbers
+    :return: Sum of the numbers
+    """
+    total = 0
+    for number in numbers:
+        total += number
+    return total
+
+# Example usage
+if __name__ == "__main__":
+    # Define a list of numbers
+    my_numbers = [1, 2, 3, 4, 5]
+    
+    # Call the function and print the result
+    result = sum_of_numbers(my_numbers)
+    print(f"The sum of {my_numbers} is: {result}")
